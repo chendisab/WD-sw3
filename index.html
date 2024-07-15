@@ -1,60 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header and Footer Display</title>
-    <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="header">
-        <h1>Welcome to My Unique Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">BrandName</a>
+                    <button class="navbar-toggle" type="button">
+                        <span class="navbar-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#services">Services</a></li>
+                        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>This is the home section of the website.</p>
-        </section>
-        <section id="about">
-            <h2>About Section</h2>
-            <p>This is the about section of the website.</p>
-        </section>
-        <section id="services">
-            <h2>Services Section</h2>
-            <p>This is the services section of the website.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>This is the contact section of the website.</p>
-        </section>
-    </main>
-
+    
+    <section id="welcome-hero" class="welcome-hero">
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p>I'm a web developer and designer.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a professional web developer with over 10 years of experience.</p>
+        </div>
+    </section>
+    
     <footer class="footer">
-        <p>&copy; 2024 My Unique Website. All rights reserved.</p>
-        <p>
-            <button onclick="switchTheme('static')">Static</button>
-            <button onclick="switchTheme('animated')">Animated</button>
-        </p>
+        <div class="container">
+            <p>&copy; 2024 Sample Page. All rights reserved.</p>
+        </div>
     </footer>
-
-    <script>
-        function switchTheme(theme) {
-            const themeStyle = document.getElementById('theme-style');
-            if (theme === 'static') {
-                themeStyle.setAttribute('href', 'styles/static.css');
-            } else if (theme === 'animated') {
-                themeStyle.setAttribute('href', 'styles/animated.css');
-            }
-        }
-    </script>
 </body>
 </html>
