@@ -60,8 +60,8 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
+-What is the project
+-Whats the purpose
 - What are key components
 - What technology used and how it is used
 
@@ -117,4 +117,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Rozel Final Project-| Website Reference-| https://github.com/wahwahwahwah-wah/WD-Finals.git
